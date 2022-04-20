@@ -30,22 +30,15 @@
 
         <header>
             <h1>Mon restaurant japonais</h1>
-            <div class="container_address">
-                <h4>Notre adresse:</h4>
-                <address>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Cras pulvinar.
-                </address>
-            </div>
-            <div class="container_tel">
-                <h4>Nous appeler:</h4>
-                <address>00 00 00 00 00</address>
-            </div>
+
             <nav>
                 <ul>
                     <li>
                         <a class="link_nav" href="#Carte">Notre carte</a>
                     </li>
+                    <li>
+                        <a class="link_nav" href="#Contact">Contact</a>
+                    </li>                   
                 </ul>
             </nav>
         </header>
@@ -227,6 +220,32 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id="Contact" class="contact_section">
+                <h3>Nous contacter</h3>
+                <div class="container_contact_form">
+                    <div class="container_adress_tel">
+                        <div class="container_address">
+                            <h4>Notre adresse:</h4>
+                            <address>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Cras pulvinar.
+                            </address>
+                        </div>
+                        <div class="container_tel">
+                            <h4>Nous appeler:</h4>
+                            <address>00 00 00 00 00</address>
+                        </div>
+                    </div>
+                    <form action="contact.php" method="POST">
+                            <input type="text" name="lastname" placeholder="Nom">
+                            <input type="text" name="firstname" placeholder="Prénom">
+                            <input type="text" name="email" placeholder="Email">
+                            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button name="submit" value="submit" type="submit">Envoyer</button>
+                    </form>                    
+                </div>
+
             </section>
         </main>
 

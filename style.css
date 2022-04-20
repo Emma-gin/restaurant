@@ -20,7 +20,7 @@ body {
     position: fixed;
     bottom: 5px;
     right: 10px;
-    background-color: rgb(47, 50, 54);
+    background-color: rgb(105,111,117);
     padding: 5px;
     font-size: 2.5rem;
     color: rgba(245, 245, 245, 0.856);
@@ -64,6 +64,7 @@ header h1 {
 /* nav */
 nav {
     font-size: 0.5em;
+    width: 15%;
 }
 
 nav ul {
@@ -122,9 +123,8 @@ section {
 }
 
 section h3 {
-    margin: 0;
+    margin: 0 0 40px 0;
     text-align: center;
-    padding-bottom: 4%;
     font-size: 3rem;
 }
 
@@ -202,6 +202,8 @@ section h3 {
     flex-direction: column;
     justify-content: space-around;
     padding: 2%;
+    border-radius: 5px;
+
 }
 
 .card_box {
@@ -236,6 +238,7 @@ section h3 {
     background-color: rgb(65, 67, 71);
     width: 80%;
     padding: 2%;
+    border-radius: 5px;
 }
 
 .card_box_part3 {
@@ -257,7 +260,81 @@ section h3 {
     margin-top: 20px;
 }
 
-/* ---footer */
+/* contact section */
+
+.contact_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.container_contact_form{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_adress_tel{
+    width: 60%;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_address, .container_tel{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container_address{
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(65, 67, 71);
+    padding: 3%;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(105,111,117);
+    margin: 10px 0;
+}
+
+::placeholder{
+    color: rgba(245, 245, 245, 0.856);
+}
+
+form input{
+    height: 25px;
+    padding: 0 0 0 10px;
+}
+
+form textarea{
+    padding: 10px;
+}
+
+form button{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(105,111,117);
+    color: rgba(245, 245, 245, 0.856);
+}
+
+/* footer */
 footer {
     height: 50px;
     background-color: rgb(47, 50, 54);
@@ -327,7 +404,6 @@ footer {
 
     header {
         display: none;
-        height: 30vh;
         width: 100%;
         top: 0;
         left: 0;
@@ -337,6 +413,17 @@ footer {
 
     header h1 {
         display: none;
+    }
+
+    nav{
+        width: 100%;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
     }
 
     .link_nav {
@@ -351,12 +438,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 40vh;
-    }
-
-    .container_address,
-    .container_tel {
-        width: 90%;
+        height: 20vh;
     }
 
     /* home section */
@@ -470,79 +552,24 @@ footer {
     .link_nav:hover {
         text-decoration: none;
     }
+
+    .container_contact_form{
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.5rem;
+    }
+
+    .container_adress_tel{
+        width: 80%;
+        font-size: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
-/* ---contact section */
 
-/* .contact_section {
-    font-size: 2rem;
-}
-
-.container_contact_section{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.contact_info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 1em;
-}
-
-.contact_form{
-    height: 70%;
-    background-color: rgb(65, 67, 71);
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
-}
-
-.contact_form button {
-    padding: 8px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(105, 111, 117);
-    box-shadow: 10px 5px 5px black;
-    color: rgba(245, 245, 245, 0.856);
-
-}
-
-.contact_form button:hover{
-    box-shadow: -10px -5px 5px black;
-
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-form input, textarea {
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    margin: 20px;
-    background-color: rgb(105, 111, 117);
-}
-
-::placeholder{
-    color: rgba(245, 245, 245, 0.856);
-
-
-}
-
-form input {
-    height: 30px;
-    padding-left: 10px;
-}
-
-form textarea {
-    padding: 5px;
-}
-
-*/
