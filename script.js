@@ -22,7 +22,6 @@ window.onscroll = function () { scrollFunction() };
 // btn appear after some scrolling
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        console.log('scroll')
         btnBackToTop.style.display = "block";
     } else {
         btnBackToTop.style.display = 'none';
